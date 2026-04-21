@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afaan Oromo Academy | Get Started - Become a Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="get started.css">
+  <style>
+    .password-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .password-wrapper i {
+      position: absolute;
+      right: 15px;
+      cursor: pointer;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand" onclick="location.href='index.html'">
+        <div class="logo-container">
+          <img src="gemni.png" alt="Logo">
+        </div>
+        <div>
+          <h1>Afaan Oromo Academy</h1>
+          <p>English-based | Cultural roots</p>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="curriculum.html">Curriculum</a>
+        <a href="about.html">About us</a>
+        <a href="getstarted.html" class="active">Get Started</a>
+      </div>
+    </header>
+
+    <div class="getstarted-hero">
+      <h1>Become fluent in Afaan Oromo</h1>
+      <p style="font-size: 1.2rem;">Zero students yet — you can be the pioneer learner of Afaan Oromo Academy!</p>
+    </div>
+
+    <div class="pioneer-banner">
+      <i class="fas fa-crown" style="font-size: 3rem; color: #1F2A1B;"></i>
+      <h2 style="margin: 0.5rem 0;">Founding Member Benefits</h2>
+      <p>
+        <strong>🎓 Lifetime free access</strong> to all premium modules • 
+        <strong>👥 Direct mentor feedback</strong> • 
+        <strong>🏆 Certificate of Pioneer</strong> • 
+        <strong>💬 Shape future lessons</strong>
+      </p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <a href="#form-container" style="text-decoration: none; color: inherit;">
+          <i class="fas fa-user-plus" style="font-size: 2rem; color: var(--oro-terra); margin: 1rem 0; display: block;"></i>
+          <h3>Create Account</h3>
+        </a>
+      </div>
+      <div class="step-card">
+        <a href="curriculum.html" style="text-decoration: none; color: inherit;">
+          <i class="fas fa-book-open" style="font-size: 2rem; color: var(--oro-terra); margin: 1rem 0; display: block;"></i>
+          <h3>Start Learning</h3>
+        </a>
+      </div>
+    </div>
+
+    <div id="form-container">
+      <h2 style="color: var(--oro-forest); margin-bottom: 1rem;">
+        <i class="fas fa-rocket"></i> Reserve Your Pioneer Spot
+      </h2>
+      <p style="margin-bottom: 1.5rem;">
+        <strong>Fill the form below to get instant access.</strong>
+      </p>
+      
+      <form id="pioneerForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="e.g., Alex Johnson" required>
+        </div>
+        
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="hello@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Create Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Min. 8 characters" required style="width: 100%;">
+            <i class="fas fa-eye" id="togglePassword"></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Your English Proficiency</label>
+          <select id="level">
+            <option>Native / Fluent</option>
+            <option>Advanced</option>
+            <option>Intermediate</option>
+            <option>Beginner</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Why do you want to learn Afaan Oromo?</label>
+          <input type="text" id="reason" placeholder="e.g., heritage, travel, cultural interest">
+        </div>
+
+        <button type="submit" style="background: var(--oro-forest); color: white; border: none; padding: 14px 32px; border-radius: 60px; font-weight: 700; font-size: 1rem; cursor: pointer; width: 100%; margin-top: 1rem;">
+          <i class="fas fa-graduation-cap"></i> Become Student #1 — Free Forever
+        </button>
+      </form>
+      <p id="formMessage" style="margin-top: 1rem; text-align: center; color: var(--oro-terra); font-weight: 600;"></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <img src="gemni.png" alt="Logo" class="footer-logo">
+      <p style="font-weight: 800; color: var(--oro-forest); letter-spacing: 1px;">AFAAN OROMO ACADEMY</p>
+      <p>Where language meets heritage</p>
+
+      <div class="social-links">
+        <a href="www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="www.youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="www.telgram.org" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="www.linkiden.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <div class="footer-info">
+        <p>Ambo, Ethiopia | &copy; 2025 Afaan Oromo Academy</p>
+        <p style="font-size: 0.75rem; margin-top: 10px; opacity: 0.6;">Designed for the next generation of speakers.</p>
+      </div>
+    </div>
+  </footer>

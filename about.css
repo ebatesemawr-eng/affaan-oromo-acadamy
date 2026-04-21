@@ -1,0 +1,432 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #FEF7E8;
+      color: #1F2A1B;
+      overflow-x: hidden;
+    
+    }
+
+    :root {
+      --oro-forest: #1A4D1E;
+      --oro-terra: #C1532B;
+      --oro-ebony: #1F2A1B;
+      --oro-sand: #F2E5C2;
+      --oro-gold: #E0A82B;
+      --oro-cream: #FFF6EA;
+    }
+
+    .container {
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    header {
+
+       background: #a0e0bb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding:  0 2rem;
+      gap: 1rem;
+      border-bottom: 2px solid rgba(193, 83, 43, 0.2);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+    }
+     .logo-container img {
+     width:90px;
+   }
+    .brand h1 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--oro-forest), var(--oro-terra));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .brand p {
+      font-size: 0.8rem;
+      font-weight: 550;
+      color: black;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      padding-top:2.5rem;
+      padding-right: 4rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--oro-ebony);
+      transition: 0.2s;
+      padding-bottom: 4px;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      border-bottom: 2px solid var(--oro-gold);
+      color: var(--oro-terra);
+    }
+
+
+    .welcome-section {
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+
+    .welcome-section h1 {
+      font-size: 3rem;
+      color: var(--oro-forest);
+      margin-bottom: 0.5rem;
+    }
+
+    .welcome-section .subhead {
+      font-size: 1.2rem;
+      color: #6B5A48;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Pioneer Banner - Friendly & Exciting */
+    .pioneer-banner {
+      background:  #a0e0bb;
+      border-radius: 48px;
+      padding: 2rem 2rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      border: 1px solid rgba(224, 168, 43, 0.3);
+      box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.1);
+    }
+
+    .pioneer-banner i {
+      font-size: 3rem;
+      color: var(--oro-gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .pioneer-banner h2 {
+      font-size: 1.8rem;
+      color: var(--oro-forest);
+      margin-bottom: 0.75rem;
+    }
+
+    .benefit-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .benefit-tag {
+      background: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--oro-terra);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Steps - Simple & Clear */
+    .steps-section {
+      margin: 3rem 0;
+    }
+
+    .steps-section h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      color: var(--oro-forest);
+      margin-bottom: 2rem;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .step-card {
+      background: white;
+      border-radius: 32px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border: 1px solid #F0E2CF;
+      transition: all 0.25s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
+      border-color: var(--oro-gold);
+    }
+
+    .step-number {
+      background: var(--oro-forest);
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 0 auto 1rem;
+    }
+
+    .step-card i {
+      font-size: 2rem;
+      color: var(--oro-terra);
+      margin: 0.75rem 0;
+      display: block;
+    }
+
+    .step-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--oro-forest);
+    }
+
+    .step-card p {
+      color: #6B5A48;
+      font-size: 0.9rem;
+    }
+
+    /* Registration Form - Friendly & Approachable */
+    #form-container {
+      background: white;
+      border-radius: 48px;
+      padding: 2.5rem;
+      margin: 2rem 0;
+      border: 1px solid #F0E2CF;
+      box-shadow: 0 12px 28px -12px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-container h2 {
+      color: var(--oro-forest);
+      margin-bottom: 0.5rem;
+      font-size: 1.8rem;
+    }
+
+    .form-container .form-intro {
+      color: #6B5A48;
+      margin-bottom: 1.8rem;
+      font-size: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--oro-ebony);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 18px;
+      border: 1px solid #E0D0BC;
+      border-radius: 60px;
+      font-family: inherit;
+      font-size: 1rem;
+      background: #FFFCF5;
+      transition: all 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--oro-gold);
+      box-shadow: 0 0 0 3px rgba(224, 168, 43, 0.2);
+    }
+
+    .form-group textarea {
+      border-radius: 24px;
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .submit-btn {
+      background: var(--oro-forest);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .submit-btn:hover {
+      background: #0e3a12;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(26, 77, 30, 0.25);
+    }
+
+    .form-message {
+      margin-top: 1.2rem;
+      text-align: center;
+      font-weight: 500;
+      padding: 0.8rem;
+      border-radius: 60px;
+      background: #F5F0E8;
+      color: var(--oro-terra);
+    }
+
+    /* Perks List - Human Touch */
+    .perks-card {
+      background: var(--oro-cream);
+      border-radius: 32px;
+      padding: 1.8rem;
+      margin: 2rem 0;
+    }
+
+    .perks-list {
+      list-style: none;
+    }
+
+    .perks-list li {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid rgba(193, 83, 43, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .perks-list li:last-child {
+      border-bottom: none;
+    }
+
+    .perks-list li i {
+      color: var(--oro-terra);
+      width: 28px;
+      font-size: 1.1rem;
+    }
+
+    /* Small Note */
+    .gentle-note {
+      text-align: center;
+      margin: 2rem 0 1rem;
+      font-size: 0.85rem;
+      color: #8B7A64;
+    }
+
+    footer {
+  background:#a0e0bb;
+  color: #000000;
+  text-align: center;
+  padding: 2rem;
+  border-top: 2px solid var(--oro-gold);
+  margin-top: 2rem;
+}
+
+   footer {
+  background-color: #a0e0bb;
+  padding: 60px 20px 30px;
+  text-align: center;
+  border-top: 1px solid #b8864d;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+  filter: grayscale(20%); /* Softens the logo for the footer */
+}
+
+.footer-brand-name {
+  font-weight: 800;
+  color: var(--oro-forest, #1F2A1B);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.footer-tagline {
+  font-size: 0.95rem;
+  color: #555555;
+  margin-bottom: 25px;
+}
+
+/* Social Media Section */
+.social-links {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Space between icons */
+}
+
+.social-links a {
+  color: var(--oro-forest, #1F2A1B);
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover Effects */
+.social-links a:hover {
+  color: var(--oro-terra, #8B4513);
+  transform: translateY(-5px); /* Lift effect */
+}
+
+/* Bottom Copyright Section */
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #c2a17b;
+  font-size: 0.85rem;
+  color: #888888;
+}
+.footer-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .social-links {
+    gap: 15px;
+  }
+  
+  .social-links a {
+    font-size: 1.3rem;
+  }
+}
